@@ -5,10 +5,17 @@
 
 #include "header.h"
 
-using namespace Magick;
-
 int main(int argC, char* argV[]) {
+try {
+    InitializeMagick(*argV);
+    std::cout << "Hello!" << std::endl;
 
-    std::cout << "Hello!";
+    Image image("640x550", "white");
+    std::cout << image.totalColors() << std::endl << image.rows() << std::endl << image.columns();
+}
+
+catch (std::exception &e) {
+    std::cerr << "Caught exception: " << e.what() << std::endl;
+}
 
 }

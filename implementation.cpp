@@ -3,6 +3,3 @@
 //
 #include "header.h"
 
-float getRGB(Image image, char* argV[]) {
-    image.read(argV[1]);
-}
