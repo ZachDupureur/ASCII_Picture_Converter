@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <iomanip>
-
+#include <vector>
 
 #include "Magick++.h"
 
